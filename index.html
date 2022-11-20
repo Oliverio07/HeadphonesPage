@@ -12,15 +12,15 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <!-- Headphone's name and description -->
+    <!-- Header -->
     <div class="container">
       <div class="row mt-4">
-        <div class="col-md-6 ">
+        <div class="col-md-6">
           <div class="brandName">
             <h2>Brand name</h2>
           </div>
         </div>
-        <div class="col-md-6 ">
+        <div class="col-md-6">
           <div class="d-flex justify-content-end">
             <a href="#" class="mx-3 link-secondary text-decoration-none links"
               >Home</a
@@ -41,15 +41,17 @@
         </div>
       </div>
     </div>
-    <!-- Headphone's photo -->
+    <!-- Name and photo -->
     <div class="container">
       <div class="row mt-5">
+        <!-- Headphone's name and description -->
         <div class="col-6 d-flex align-self-center flex-column">
           <p class="display-3">Headphone's name</p>
           <p class="lead">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </div>
+        <!-- Headphone's photo -->
         <div class="col-6">
           <img
             src="media/img/david-nicolai-7fdxZ3Clsaw-unsplash.jpg"
@@ -60,7 +62,19 @@
         </div>
       </div>
     </div>
-
+    <!-- Video -->
+    <div class="container">
+      <div class="row mt-5 mb-5">
+        <div class="col-12 d-flex justify-content-center">
+          <video controls id="headphonesVideo" class="rounded" width="1024px">
+            <source src="media/video/production ID_4594932.mp4" />
+            <p class="vjs-no-js">
+              Please enable javascript and reload the page/p>
+            </p>
+          </video>
+        </div>
+      </div>
+    </div>
     <script src="libraries/Bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
   </body>
