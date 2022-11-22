@@ -7,6 +7,8 @@
     <title>Headphones name</title>
     <!-- VideoJS -->
     <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="libraries/Fontawesome/css/all.min.css" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="libraries/Bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/index.css" />
@@ -131,7 +133,7 @@
     <!-- Reviews -->
     <div class="container">
       <div class="row mt-5 mb-5">
-        <p style="text-align: center;" class="h1">Testimonials</p>
+        <p style="text-align: center" class="h1">Testimonials</p>
         <div class="col-4">
           <div class="card mt-5" style="width: 250px">
             <img
@@ -143,7 +145,8 @@
               <h4 class="card-title">John Doe</h4>
               <small class="card-subtitle text-muted">2020-10-22</small>
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, illum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi,
+                illum.
               </p>
             </div>
           </div>
@@ -159,7 +162,8 @@
               <h4 class="card-title">John Doakes</h4>
               <small class="card-subtitle text-muted">2019-11-12</small>
               <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. In adipisci voluptatibus sequi possimus, doloremque sed.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                adipisci voluptatibus sequi.
               </p>
             </div>
           </div>
@@ -175,14 +179,97 @@
               <h4 class="card-title">Jane Doe</h4>
               <small class="card-subtitle text-muted">2021-01-02</small>
               <p class="card-text">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, impedit? Praesentium reprehenderit tenetur obcaecati illum nisi minus debitis beatae voluptates?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+                impedit?
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Contact form -->
+    <div style="background: #f2f2f2">
+      <div class="container">
+        <div class="row justify-content-center align-items-center mt-5 mb-5">
+          <div class="col-12">
+            <p class="h2 d-flex justify-content-center mt-4 mb-3">
+              Message us!
+            </p>
+          </div>
+          <form action="" id="contactForm">
+            <div class="mb-3">
+              <!-- Name -->
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                id="name"
+                class="form-control"
+                placeholder="Name"
+              />
+              <!-- Email -->
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  class="form-control"
+                  type="email"
+                  id="emailAddress"
+                  placeholder="Email address"
+                />
+              </div>
+              <!-- Message -->
+              <div class="mb-3">
+                <label for="message" id="message" class="form-label"
+                  >Message</label
+                >
+                <textarea
+                  class="form-control"
+                  name="message"
+                  id="message"
+                  style="height: 10rem; resize: none"
+                ></textarea>
+              </div>
+              <!-- Submit -->
+              <div class="d-grid">
+                <button class="btn btn-primary btn-sm mb-3" type="submit">
+                  Send message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Newsletter -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="newsletter d-flex justify-content-center mt-2 mb-3">
+            <p class="h3">Newsletter</p>
+          </div>
+          <form action="">
+            <div class="mb-3">
+              <input
+                class="form-control"
+                type="email"
+                id="emailAddress"
+                placeholder="Email address"
+              />
+              <div class="submit d-flex justify-content-center">
+                <button class="btn btn-primary btn-sm mt-3 mb-3" type="submit">
+                  Send
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <script src="libraries/Bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <script src="libraries/Fontawesome/js/all.min.js"></script>
   </body>
 </html>
